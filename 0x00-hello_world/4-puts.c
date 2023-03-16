@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* initializing main function */
+/**
+ *  initializing main function
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
