@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- *  initializing main function
+ *  main - initializing main function
+ *  Return: returns 0
  */
 int main(void)
 {
