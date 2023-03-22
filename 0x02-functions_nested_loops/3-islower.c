@@ -3,17 +3,13 @@
 
 /**
  * _islower - difines islower
- * Return: returns 1
+ * @c: the character to print
  * Return: returns 0
 */
 int _islower(int c)
 {
-        if (islower(c))
-        {
-                return (1);
-        }
-	else 
-	{
+	if (islower(c))
+		return (1);
+	else
 		return (0);
-	}
 }
