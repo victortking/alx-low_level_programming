@@ -6,7 +6,8 @@
 /* betty style doc for function main goes there */
 
 /**
- * main - initializing main function
+ * positive_or_negative - initializing main function
+ * @n: parameter to check
  * Return: returns 0
  */
 int positive_or_negative(int n)
