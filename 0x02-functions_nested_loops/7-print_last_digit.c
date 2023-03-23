@@ -2,14 +2,18 @@
 
 /**
  * print_last_digit - entry point
- * @n: parameter to check
+ * @a: parameter to check
  * Return: returns last digit
  */
-int print_last_digit(int n)
+int print_last_digit(int a)
 {
-	int lastn;
+       	if (a >= 0 && a <= 9)
+        return (a);
 
-	lastn = n % 10;
-
-	return (lastn);
+        else
+        {
+	       	a = a % 10;
+	a *= 11;
+	        return (a);
+        }
 }
