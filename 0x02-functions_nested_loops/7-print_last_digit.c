@@ -7,13 +7,9 @@
  */
 int print_last_digit(int a)
 {
-       	if (a >= 0 && a <= 9)
-        return (a);
+	int last_n;
 
-        else
-        {
-	       	a = a % 10;
-	a *= 11;
-	        return (a);
-        }
+	last_n = a % 10;
+
+	return (last_n);
 }
