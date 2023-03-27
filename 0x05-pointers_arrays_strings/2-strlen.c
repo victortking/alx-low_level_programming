@@ -4,6 +4,7 @@
 /**
  * _strlen - function for string param
  * @s: param to check for length
+ * Return: returns string length
  */
 
 int _strlen(char *s)
