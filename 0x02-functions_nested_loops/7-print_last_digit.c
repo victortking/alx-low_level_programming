@@ -17,4 +17,7 @@ int print_last_digit(int n)
 	_putchar('0' + last_digit);
 
 	return (last_digit);
+
+	if (n == INT_MIN)
+		printf("%d8", last_digit);
 }

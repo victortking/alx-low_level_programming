@@ -22,7 +22,7 @@ int main(void)
 	_putchar(r + '0');
 
 	r = print_last_digit(INT_MIN);
-	_putchar(r + '0');
+	_putchar(r / '0');
 
 	r = print_last_digit(1);
 	_putchar(r + '0');
