@@ -3,9 +3,9 @@
 
 /**
  * _puts - main entry
- * @str - param to print
+ * @str: param to print
  */
 void _puts(char *str)
 {
 	puts(str);
-}	
+}
