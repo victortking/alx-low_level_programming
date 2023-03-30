@@ -9,7 +9,9 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src);
+	char *a;
 
-	return (strcat(dest, src));
+	a = strcat(dest, src);
+
+	return (a);
 }
