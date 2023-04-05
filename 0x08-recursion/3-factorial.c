@@ -11,14 +11,14 @@ int factorial(int n)
 	{
 		n = 1;
 
-		return n;
+		return (n);
 	}
 	else if (n < 0)
 	{
 		n = -1;
 
-		return n;
+		return (n);
 	}
 
-	return n * factorial(n - 1);
+	return (n * factorial(n - 1));
 }
