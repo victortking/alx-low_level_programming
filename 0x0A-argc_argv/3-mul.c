@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 	if (argc < 3 || argc > 3)
 	{
 		printf("ERROR\n");
-		return 1;
+		return (1);
 	}
-	
+
 	for (i = 0; i < atoi(argv[1]); i++)
 			mul += atoi(argv[2]);
 
