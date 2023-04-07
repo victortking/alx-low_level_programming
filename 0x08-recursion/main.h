@@ -18,3 +18,5 @@ int square_root_helper(int n, int start, int end);
 
 int is_prime_helper(int n, int i);
 
+int is_palindrome(char *s);
+
