@@ -21,7 +21,7 @@ int square_root_helper(int n, int start, int end)
 		return mid;
 
 	if (mid * mid < n)
-		return square_root_helper(n, mid + 1, end)
+		return square_root_helper(n, mid + 1, end);
 	else
 		return square_root_helper(n, start, mid - 1);
 }
