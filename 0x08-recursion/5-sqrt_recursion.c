@@ -26,7 +26,7 @@ int _sqrt_recursion(int n)
  * Return: the natural square root of n, or -1 if n does not have a
  * natural square root
  */
-int _sqrt_helper(int n, int i)
+long int _sqrt_helper(int n, int i)
 {
 	/* Base case */
 	if (i <= 0)
