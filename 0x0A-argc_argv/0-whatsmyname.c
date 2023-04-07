@@ -7,9 +7,9 @@
  * @argv: argument vector
  * Return: returns integer value
  */
-int main(int argc, char *argv[])
+int main(int __attribute__ ((unused)) argc, char *argv[])
 {
 	printf("%s\n", *argv);
 
-	return (argc);
+	return (0);
 }
