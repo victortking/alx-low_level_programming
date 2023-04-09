@@ -17,7 +17,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	if (cents < 0)
+	{
 		printf("0\n");
+		return (0);
+	}
 
 	while (cents > 0)
 	{
@@ -29,7 +32,7 @@ int main(int argc, char *argv[])
 		cents %= 5;
 		coins += cents / 2;
 		cents %= 2;
-		coins += cents;
+		coins += cents / 1;
 		cents = 0;
 	}
 	printf("%d\n", coins);
