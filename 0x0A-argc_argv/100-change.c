@@ -9,8 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int cents = atoi(argv[1]), count = 0, i;
-	int coins[] = {25, 10, 5, 2, 1};
+	int cents = atoi(argv[1]), coins = 0;
 
 	if (argc != 2)
 	{
@@ -23,12 +22,15 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-
-	for (i = 0; i < 5; i++)
-	{
-		cents -= coins[i];
-		count++;
-	}
-	printf("%d\n", count);
+	coins += cents / 25;
+	cents %= 25;
+	coins += cents / 10;
+	cents %= 10;
+	coins += cents / 5;
+	cents %= 5;
+	coins += cents / 2;
+	cents %= 2;
+	coins += cents;
+	printf("%d\n", coins);
 	return (0);
 }
