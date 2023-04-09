@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (cents < 0)
+	if (cents <= 0)
 	{
 		printf("0\n");
 		return (0);
@@ -34,8 +34,6 @@ int main(int argc, char *argv[])
 		cents %= 2;
 		coins += cents;
 		cents %= 1;
-		coins += 0;
-		cents = 0;
 	}
 	printf("%d\n", coins);
 	return (0);
