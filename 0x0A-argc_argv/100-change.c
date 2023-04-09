@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
 	int i;
 	int coins[5] = {25, 10, 5, 2, 1};
 	int total = 0;
-	int rem = 0;
 	int realv;
 
 	realv = atoi(argv[1]);
@@ -32,8 +31,7 @@ int main(int argc, char *argv[])
 			for (i = 0; i < 5; i++)
 			{
 				total += realv / coins[i];
-				rem = realv % coins[i];
-				realv = rem;
+				realv %= coins[i];
 			}
 			printf("%d\n", total);
 		}
