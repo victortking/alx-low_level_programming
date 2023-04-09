@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
+/**
+ * main - main entry
+ * @argc: arg count
+ * @argv: arg vector
+ * Return: returns int value
+ */
 int main(int argc, char *argv[]) 
 {
 	int cents = atoi(argv[1]), coins = 0;
