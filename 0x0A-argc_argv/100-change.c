@@ -21,12 +21,12 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		if (realv <= 0)
+		if (realv < 0)
 		{
 			printf("%d\n", total);
 			return (0);
 		}
-		else
+		else if (realv >= 0)
 		{
 			for (i = 0; i < 5; i++)
 			{
