@@ -1,40 +1,43 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
+
 /**
-  * main - start of program
-  * @argc: argument count
-  * @argv: argument array
-  * Return: exit status (0)
-  */
+ * main - entry point
+ * @argc: arg count
+ * @argv: arg vector
+ * Return: returns int value
+ */
 int main(int argc, char *argv[])
 {
-	int i;
-	int coins[5] = {25, 10, 5, 2, 1};
-	int total = 0;
-	int realv;
+	int coins[] = {25, 10, 5, 2, 1};
+	int num_coins = sizeof(coins) / sizeof(coins[0]);
+	int total_coins = 0;
+	int cents, i;
+	int num_this_coin;
 
-	realv = atoi(argv[1]);
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
+
+	cents = atoi(argv[1]);
+
+	if (cents < 0)
 	{
-		if (realv < 0)
-		{
-			printf("%d\n", total);
-			return (0);
-		}
-		else if (realv >= 0)
-		{
-			for (i = 0; i < 5; i++)
-			{
-				total += realv / coins[i];
-				realv %= coins[i];
-			}
-			printf("%d\n", total);
-		}
+		printf("0\n");
+		return (0);
 	}
+
+	for (i = 0; i < num_coins && cents > 0; i++)
+	{
+		num_this_coin = cents / coins[i];
+		total_coins += num_this_coin;
+		cents -= num_this_coin * coins[i];
+	}
+
+	printf("%d\n", total_coins);
+
 	return (0);
 }
