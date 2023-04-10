@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _abs(int __attribute__((unused)) n)
+int _isupper(int __attribute__((unused)) c)
 {
 	return (0);
 }
