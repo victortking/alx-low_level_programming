@@ -1,5 +1,6 @@
 #include "main.h"
 
-void _puts(char __attribute__((unused)) *s)
+void _puts(char *s)
 {
+	printf("%s\n", s);
 }
