@@ -7,7 +7,7 @@
  * @argc: The number of command-line arguments
  * @argv: An array of pointers to the arguments
  *
- * Return: 0 on success, 98 on error, 99 on an invalid operator, 100 on div by 0
+ * Return: 0 on success
  */
 int main(int argc, char **argv)
 {
