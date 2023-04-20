@@ -1,5 +1,11 @@
 #include "variadic_functions.h"
 
+/**
+ * sum_them_all - sum all passed int arg and returns them
+ * @n: fix arg that specifies the number of arg to pass
+ * @...: unkown argument
+ * Return: return int values
+ */
 int sum_them_all(const unsigned int n, ...)
 {
 	int sum_all = 0;
