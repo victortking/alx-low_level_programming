@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "lists.h"
-#include <stddef.h>
 
 /**
  * print_list - prints elements of a node
