@@ -13,10 +13,6 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *current;
 	size_t count = 0;
 
-
-	if (!head)
-		exit(98);
-
 	while (head != NULL)
 	{
 		current = head;
