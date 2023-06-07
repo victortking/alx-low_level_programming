@@ -20,7 +20,7 @@ int find_sqrt(int n, int i)
  * _sqrt_recursion - Returns the natural square root of a number
  * @n: The number to find the square root of
  *
- * Return: The natural square root of n, -1 if it doesn't have a natural square root
+ * Return: The natural square root of n, -1 if natural sqr is null
  */
 int _sqrt_recursion(int n)
 {
