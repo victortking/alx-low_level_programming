@@ -8,9 +8,9 @@
  */
 void __attribute__((constructor)) before_main()
 {
-    const char *line1 = "You're beat! and yet, you must allow,";
-    const char *line2 = "I bore my house upon my back!";
+	const char *line1 = "You're beat! and yet, you must allow,";
+	const char *line2 = "I bore my house upon my back!";
 
-    puts(line1);
-    puts(line2);
+	puts(line1);
+	puts(line2);
 }
